@@ -1,4 +1,9 @@
 .panel {
-	height: 100%; 
-	background: yellow;
+	min-height: 100%; 
+	background: url('../images/blu_stripes.png');
+	padding-top: 70px;
+}
+
+.intro {
+	font-size: 1.8em;
 }
