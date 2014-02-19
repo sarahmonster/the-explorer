@@ -10,14 +10,15 @@
 
 
 
-
+#work {
+	background: #555;
+}
 #work > :first-child {
 	margin-top: 6em;
 }
 
 /* portfolio section */
 .portfolio-piece {
-	background: url('../images/el-tettensor-author-website/parallax.jpg');
 	background-size: cover;
 	border: 10px solid #fff;
 	margin-top: 12em;
@@ -59,4 +60,11 @@
 		}
 	}
 
+}
+
+#eltettensor {
+	background: url('../images/el-tettensor-author-website/parallax.jpg');
+}
+#cascades {
+	background: url('../images/cascades-day-spa-website/full-page.jpg');
 }
