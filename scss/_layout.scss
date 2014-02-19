@@ -1,3 +1,4 @@
+/* overall rules */ 
 .panel {
 	min-height: 100%; 
 	background: url('../images/blu_stripes.png');
@@ -6,9 +7,24 @@
 
 .intro {
 	font-size: 1.8em;
+	line-height: 1.4em;
+	font-family: $sans-serif;
+	font-weight: 300;
+	
+	strong {
+		font-weight: 500;
+		background-color: lighten($blue, 60%);
+	}
+}
+
+h3 {
+	font-family: $sans-serif;
+	font-weight: 600;
+	color: lighten($blue, 20%);
 }
 
 
+/* portfolio section */
 #work {
 	background: $grey;
 }
@@ -16,7 +32,6 @@
 	margin-top: 6em;
 }
 
-/* portfolio section */
 .portfolio-piece {
 	background-size: cover;
 	border: 20px solid $white;
@@ -57,13 +72,14 @@
 			font-size: .7em;
 			letter-spacing: 1px;
 			background: $purple;
-			padding: 10px 12px 8px 12px;
+			padding: 8px 12px 8px 12px;
 			color: $white;
 			display: inline-block;
 			max-width: 90%;
 			float: left;
 			line-height: 1.4em;
 			margin: 0 0 .5em -30px;
+			font-family: $sans-serif;
 		}
 		
 	}
