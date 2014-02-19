@@ -24,6 +24,40 @@ h3 {
 }
 
 
+/* navigation bar */
+[data-magellan-expedition] {
+	background: $black;
+	border-bottom: 2px solid $white;
+	@include box-shadow;
+	padding: 0;
+	
+	.sub-nav {
+		text-align: center;
+		
+		dd {
+			float: none;
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+			a {
+				color: darken($white, 20%);
+				padding: 10px 20px;
+				display: inline-block;
+			}
+			
+			&.active a {
+				background: darken($blue, 10%);
+				border-radius: 0;
+				color: darken($white, 30%);
+			}
+		}
+	}
+}
+
+
 /* portfolio section */
 #work {
 	background: $grey;
