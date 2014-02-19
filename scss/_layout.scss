@@ -57,12 +57,13 @@
 			font-size: .7em;
 			letter-spacing: 1px;
 			background: $purple;
-			padding: 4px 5px 2px;
+			padding: 10px 12px 8px 12px;
 			color: $white;
 			display: inline-block;
+			max-width: 90%;
 			float: left;
 			line-height: 1.4em;
-			margin: 0 0 .5em;
+			margin: 0 0 .5em -30px;
 		}
 		
 	}
@@ -88,4 +89,41 @@
 }
 #cascades {
 	background: url('../images/cascades-day-spa-website/full-page.jpg');
+}
+
+#other {
+	padding-top: 6em;
+	padding-bottom: 2em;
+	background: $grey;
+	
+	.row::before {
+		display: none;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	.project-writeup {
+		padding: 5px;
+		border: 0;
+		width: 32%;
+		margin: 0 2% 1em 0;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+		
+		.services {
+			margin: -10px 0 10px -15px;
+			position: relative;
+		}
+		
+		p {
+			font-size: .9em;
+			line-height: 1.2em;
+			margin:  .5em;
+			text-align: center;
+		}
+	}
 }
