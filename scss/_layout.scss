@@ -1,7 +1,7 @@
 .panel {
 	min-height: 100%; 
 	background: url('../images/blu_stripes.png');
-	padding-top: 70px;
+	padding: 70px 20px 20px;
 }
 
 .intro {
@@ -9,9 +9,8 @@
 }
 
 
-
 #work {
-	background: #555;
+	background: $grey;
 }
 #work > :first-child {
 	margin-top: 6em;
@@ -20,14 +19,28 @@
 /* portfolio section */
 .portfolio-piece {
 	background-size: cover;
-	border: 10px solid #fff;
+	border: 20px solid $white;
 	margin-top: 12em;
 	position: relative;
+	@include box-shadow;
+	padding-bottom: 2em;
+	
+	.row::before {
+		background: rgba(0,0,0,.5);
+		width: 100%;
+		height: 100%;	
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 	
 	.project-writeup {
 		background: rgba(255, 255, 255, .75);
 		margin-top: 4em;
-		border: 1px solid #000;
+		border: 1px solid $white;
+		@include box-shadow;
 		text-align: center;
 		
 		.responsive {
@@ -36,12 +49,20 @@
 		
 		.services, h2, p {
 			text-align: left;
+			clear: both;
 		}
 		
 		.services {
 			text-transform: uppercase;
 			font-size: .7em;
 			letter-spacing: 1px;
+			background: $purple;
+			padding: 4px 5px 2px;
+			color: $white;
+			display: inline-block;
+			float: left;
+			line-height: 1.4em;
+			margin: 0 0 .5em;
 		}
 		
 	}
@@ -49,7 +70,7 @@
 	blockquote {
 		font-size: 1.2em;
 		font-style: italic;
-		margin: 2em 0;
+		margin: 2em 0 1em;
 				
 		&::before {
 			content: ('\201C');

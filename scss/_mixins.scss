@@ -1,0 +1,142 @@
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$black:             #0b232f;
+$white:             #eaf4f9;
+$grey: 				#acaba4;
+
+
+$blue:       	 	#23507b;
+$purple: 			#593679;
+
+$link-color:        $purple;
+$link-hover:        $blue;
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+@import url('../fonts/achille.css');
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic');
+
+$slab-serif:        "Caecilia", Helvetica, Arial, sans-serif;
+$sans-serif:        "Lato", Helvetica, Arial, sans-serif;
+$serif:             "Bree Serif", Cambria, Times New Roman, Times, serif;
+
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic;
+}
+
+
+/*********************
+BROWSER PREFIXES
+*********************/
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+/*********************
+SHADOWS
+*********************/
+@mixin box-shadow ($horizontal: 0px, $vertical: 2px, $shadow-width: 4px, $shadow-color: rgba(1, 2, 2, .25)) {
+    @include vendor-prefix(box-shadow, $horizontal $vertical $shadow-width $shadow-color);
+}
+
+/*********************
+TRANSITION
+*********************/
+
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit",  "-ms", "-moz", "-o");
+  @each $prefix in $prefixes {
+    #{$prefix}-transition: $transition;
+  }
+  transition: $transition;
+}
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+/*********************
+BOX SIZING
+*********************/
+
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing:    $type;
+	-ms-box-sizing:     $type;
+	box-sizing:         $type;
+}
+
+
+/*********************
+BUTTONS
+*********************/
+
+.button, .button:visited {
+	font-family: $sans-serif;
+	border: 2px solid $white;
+	padding: 4px 10px;
+	color: $white;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0,0,0, .75);
+	cursor: pointer;
+	line-height: .8em;
+	border-radius: 0px;
+	@include css-gradient($link-color, darken($link-color, 5%));
+
+
+	&:hover, &:focus {
+		color: $white;
+	  	border: 1px solid darken($link-color, 13%);
+	  	border-top-color: darken($link-color, 20%);
+	 	border-left-color: darken($link-color, 20%);
+		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+	}
+
+	&:active {
+		@include css-gradient(darken($link-color, 5%), $link-color);
+	}
+}
+
