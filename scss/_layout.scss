@@ -1,20 +1,8 @@
-/* overall rules */ 
+/* general rules */ 
 .panel {
 	min-height: 100%; 
 	background: url('../images/blu_stripes.png');
 	padding: 70px 20px 20px;
-}
-
-.intro {
-	font-size: 1.8em;
-	line-height: 1.4em;
-	font-family: $sans-serif;
-	font-weight: 300;
-	
-	strong {
-		font-weight: 500;
-		background-color: lighten($blue, 60%);
-	}
 }
 
 h3 {
@@ -22,6 +10,7 @@ h3 {
 	font-weight: 600;
 	color: lighten($blue, 20%);
 }
+
 
 
 /* navigation bar */
@@ -54,6 +43,28 @@ h3 {
 				color: darken($white, 30%);
 			}
 		}
+	}
+}
+
+
+
+/* hello section */
+#hello {
+	.intro {
+	font-size: 1.8em;
+	line-height: 1.4em;
+	font-family: $sans-serif;
+	font-weight: 300;
+	
+		strong {
+			font-weight: 500;
+			background-color: lighten($blue, 60%);
+		}
+	}
+	
+	img {
+		@include circular;
+		margin-top: 1em;
 	}
 }
 

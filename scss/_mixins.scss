@@ -51,6 +51,18 @@ BROWSER PREFIXES
 }
 
 /*********************
+CIRCLE
+*********************/
+@mixin circular ($horizontal: 0px, $vertical: 2px, $shadow-width: 4px, $shadow-color: rgba(1, 2, 2, .25)) {
+	border-radius: 100%;
+	border: 10px solid $white;
+    @include box-shadow;
+}
+
+
+
+
+/*********************
 SHADOWS
 *********************/
 @mixin box-shadow ($horizontal: 0px, $vertical: 2px, $shadow-width: 4px, $shadow-color: rgba(1, 2, 2, .25)) {
