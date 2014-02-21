@@ -85,6 +85,21 @@ strong {
 }
 
 
+/* about section */
+#about {
+
+	.row {
+		margin-top: 2em;
+	}
+	
+	img {
+		@include circular;
+	}
+}
+
+
+
+
 /* portfolio section */
 #work {
 	background: $grey;
