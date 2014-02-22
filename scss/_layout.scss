@@ -95,6 +95,18 @@ strong {
 	img {
 		@include circular;
 	}
+	
+	.progress {
+	
+		.meter {
+			color: $white;
+			line-height: 1.6em;
+			text-indent: 4px;
+			font-size: .85em;
+			font-weight: 400;
+			font-family: $sans-serif;
+		}
+	}
 }
 
 
