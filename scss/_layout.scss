@@ -57,8 +57,8 @@ strong {
 
 /* hello section */
 #hello {
-	background: $purple;
 	@include css-gradient($from: darken($purple, 10%), $to: darken($black, 10%));
+	background: url('../images/stars.png') no-repeat center;
 	color: $white;
 	
 	h1 {
