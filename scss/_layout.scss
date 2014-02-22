@@ -109,12 +109,12 @@ strong {
 }
 
 .portfolio-piece {
-	background-size: cover;
 	border: 20px solid $white;
 	margin-top: 12em;
 	position: relative;
 	@include box-shadow;
 	padding-bottom: 2em;
+	background-size: cover;
 	
 	.row:first-child::before {
 		background: rgba(0,0,0,.75);
@@ -174,7 +174,14 @@ strong {
 	.detail {
 		@include circular;
 		margin-top: 2em;
-	}
+		@include filter(grayscale(80%));
+		filter: url(../svg/filters.svg#greyscale);
+		
+		&:hover {
+			@include filter(grayscale(0%));
+			filter: url(../svg/filters.svg#colour);
+		}
+  	}
 	
 	blockquote {
 		font-size: 1.2em;
@@ -192,18 +199,18 @@ strong {
 
 }
 
-#triggersandsparks {
+#triggersandsparks .row:first-child {
 	background: url('../images/triggers-and-sparks/blog.jpg.png');
 }
 
 
-#eltettensor {
+#eltettensor .row:first-child {
 	background: url('../images/el-tettensor-author-website/parallax.jpg');
 }
-#cascades {
+#cascades .row:first-child {
 	background: url('../images/cascades-day-spa-website/full-page.jpg');
 }
-#zombies {
+#zombies .row:first-child {
 	background: url('../images/zombies-ate-lauren/background.jpg');
 }
 

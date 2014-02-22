@@ -50,6 +50,7 @@ BROWSER PREFIXES
   #{$name}: #{$argument};
 }
 
+
 /*********************
 CIRCLE
 *********************/
@@ -57,6 +58,17 @@ CIRCLE
 	border-radius: 100%;
 	border: 10px solid $white;
     @include box-shadow;
+}
+
+
+/*********************
+FILTER IMAGES
+*********************/
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+@mixin filter($properties) {
+  @include vendor-prefix(filter, $properties);
 }
 
 
