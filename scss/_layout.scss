@@ -87,6 +87,7 @@ strong {
 
 /* about section */
 #about {
+	background: url('../images/clouds.png') no-repeat center;
 
 	.row {
 		margin-top: 2em;
@@ -129,7 +130,7 @@ strong {
 	background-size: cover;
 	
 	.row:first-child::before {
-		background: rgba(0,0,0,.75);
+		background: rgba(0,0,0,.5);
 		width: 100%;
 		height: 100%;	
 		content: '';
@@ -211,18 +212,18 @@ strong {
 
 }
 
-#triggersandsparks .row:first-child {
+#triggersandsparks {
 	background: url('../images/triggers-and-sparks/blog.jpg.png');
 }
 
 
-#eltettensor .row:first-child {
+#eltettensor {
 	background: url('../images/el-tettensor-author-website/parallax.jpg');
 }
-#cascades .row:first-child {
+#cascades {
 	background: url('../images/cascades-day-spa-website/full-page.jpg');
 }
-#zombies .row:first-child {
+#zombies {
 	background: url('../images/zombies-ate-lauren/background.jpg');
 }
 
