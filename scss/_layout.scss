@@ -263,3 +263,25 @@ strong {
 		}
 	}
 }
+
+
+
+/* contact section */
+#contact {
+	
+	h1 {
+		color: lighten($blue, 30%);
+		margin: 1em 0 .5em;
+	}
+	.intro {
+		font-size: 1.7em;
+		line-height: 1.4em;
+		font-family: $sans-serif;
+		font-weight: 300;
+	}
+	
+	img {
+		@include circular;
+		margin-bottom: 2em;
+	}
+}
