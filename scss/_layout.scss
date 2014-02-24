@@ -23,6 +23,21 @@ strong {
 	padding-left: .1em;
 }
 
+i {
+	font-size: 16px;
+	background-color: $purple;
+	color: $white;
+	padding: 5px;
+	margin: 0 5px 0 0;
+	border-radius: 50%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a:hover i {
+	background-color: $white;
+	color: $purple;
+}
+
 
 
 /* navigation bar */
@@ -287,5 +302,15 @@ strong {
 	img {
 		@include circular;
 		margin-bottom: 2em;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		
+		li {
+			padding: 0;
+			margin: 4px 0;
+		}
 	}
 }
