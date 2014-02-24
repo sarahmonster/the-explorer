@@ -96,8 +96,13 @@ strong {
 		margin-top: 2em;
 	}
 	
-	img {
+	.large-3 img {
 		@include circular;
+	}
+	
+	.large-6 img {
+		background: darken($white, 5%);
+		border: 1px solid lighten($black, 40%);
 	}
 	
 	.progress {
