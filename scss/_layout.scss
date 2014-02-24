@@ -13,7 +13,7 @@
 		left: 0;
 		width: 100%;
 		height: 25px;
-		background: lighten($grey, 20%) url('../images/pinstriped_suit_@2X.png');
+		background: lighten($grey, 20%) url('../images/backgrounds/pinstriped_suit_@2X.png');
 		background-size: 400px 333px;
 		border-top: 2px solid $white;
 		border-bottom: 2px solid $white;
@@ -162,7 +162,7 @@ a:hover i {
 /* hello section */
 #hello {
 	@include css-gradient($from: darken($purple, 10%), $to: darken($black, 10%));
-	background: darken($purple, 10%) url('../images/stars.png') no-repeat center;
+	background: darken($purple, 10%) url('../images/backgrounds/stars.png') no-repeat center;
 	color: $white;
 	
 	h1 {
@@ -200,7 +200,7 @@ a:hover i {
 
 /* about section */
 #about {
-	background: url('../images/clouds.png') no-repeat center;
+	background: url('../images/backgrounds/clouds.png') no-repeat center;
 
 	.row {
 		margin-top: 2em;
@@ -248,7 +248,7 @@ a:hover i {
 
 /* portfolio section */
 #work {
-	background: url('../images/dark_leather_@2X.png');
+	background: url('../images/backgrounds/dark_leather_@2X.png');
 	background-size: 398px 484px;
 }
 #work > :first-child {
@@ -352,25 +352,25 @@ a:hover i {
 }
 
 #wickeremporium {
-	background: url('../images/wicker-emporium/bg2.jpg');
+	background: url('../images/work/wicker-emporium/bg2.jpg');
 }
 #eltettensor {
-	background: url('../images/el-tettensor-author-website/bg.jpg');
+	background: url('../images/work/el-tettensor-author-website/bg.jpg');
 }
 #cascades {
-	background: url('../images/cascades-day-spa-website/bg2.jpg');
+	background: url('../images/work/cascades-day-spa-website/bg2.jpg');
 }
 #zombies {
-	background: url('../images/zombies-ate-lauren/bg.jpg');
+	background: url('../images/work/zombies-ate-lauren/bg.jpg');
 }
 #triggersandsparks {
-	background: url('../images/triggers-and-sparks/bg2.jpg');
+	background: url('../images/work/triggers-and-sparks/bg2.jpg');
 }
 
 #other {
 	padding-top: 6em;
 	padding-bottom: 2em;
-	background: url('../images/map.jpg');
+	background: url('../images/backgrounds/map.jpg');
 	
 	.row::before {
 		display: none;
