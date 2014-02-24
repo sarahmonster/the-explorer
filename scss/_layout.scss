@@ -6,14 +6,22 @@
 }
 h1 {
 	color: $purple;
+	text-shadow: 1px 1px 2px #fff;
 }
 h2 {
 	color: $blue;
+	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
 }
 h3 {
 	font-family: $sans-serif;
 	font-weight: 600;
 	color: lighten($blue, 10%);
+	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+	
+	i {
+		font-size: 32px;
+		margin-right: 10px;
+	}
 }
 
 strong {
@@ -89,8 +97,13 @@ a:hover i {
 	color: $white;
 	
 	h1 {
-		color: lighten($blue, 40%);
+		color: lighten($blue, 10%);
 		margin: 1em 0 .5em;
+		text-shadow: 1px 1px 2px darken($purple, 40%);
+		
+		span {
+			color: lighten($blue, 30%);
+		}
 	}
 	.intro {
 		font-size: 1.7em;
