@@ -25,13 +25,17 @@ strong {
 
 i {
 	font-size: 16px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a i {
 	background-color: $purple;
 	color: $white;
 	padding: 5px;
 	margin: 0 5px 0 0;
 	border-radius: 50%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 a:hover i {
 	background-color: $white;
@@ -129,11 +133,18 @@ a:hover i {
 	
 		.meter {
 			color: $white;
-			line-height: 1.6em;
+			line-height: 1.4em;
 			text-indent: 4px;
-			font-size: .85em;
+			font-size: .7em;
 			font-weight: 400;
 			font-family: $sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			
+			i {
+				margin-top: 5px;
+				vertical-align: bottom;
+			}
 		}
 	}
 }
