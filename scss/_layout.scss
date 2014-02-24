@@ -124,29 +124,37 @@ a:hover i {
 		@include circular;
 	}
 	
-	.large-6 img {
-		background: darken($white, 5%);
-		border: 1px solid lighten($black, 40%);
-	}
+	.graphs {
+		
+		h3, h4 {
+			color: $purple;
+		}
+		
+		img {
+			background: darken($white, 5%);
+			border: 1px solid lighten($black, 40%);
+		}	
+		
+		.progress {
 	
-	.progress {
-	
-		.meter {
-			color: $white;
-			line-height: 1.4em;
-			text-indent: 4px;
-			font-size: .7em;
-			font-weight: 400;
-			font-family: $sans-serif;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			
-			i {
-				margin-top: 5px;
-				vertical-align: bottom;
+			.meter {
+				color: $white;
+				line-height: 1.4em;
+				text-indent: 4px;
+				font-size: .7em;
+				font-weight: 400;
+				font-family: $sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				
+				i {
+					margin-top: 5px;
+					vertical-align: bottom;
+				}
 			}
 		}
 	}
+	
 }
 
 
