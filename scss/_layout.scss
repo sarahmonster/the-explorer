@@ -51,6 +51,7 @@ i {
 	font-size: 16px;
 	margin: 0 5px 0 0;
 	display: inline-block;
+	vertical-align: bottom;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -130,12 +131,24 @@ a:hover i {
 				color: darken($white, 20%);
 				padding: 10px 20px;
 				display: inline-block;
+				
+				i {
+					margin-right: 10px;
+				}
 			}
 			
 			&.active a {
 				background: darken($blue, 10%);
 				border-radius: 0;
-				color: darken($white, 30%);
+				color: darken($white, 20%);
+				
+				i {
+					background: lighten($blue, 5%);
+				}
+				
+				&:hover i {
+					color: darken($white, 20%);
+				}
 			}
 		}
 	}
@@ -222,7 +235,6 @@ a:hover i {
 				
 				i {
 					margin-top: 5px;
-					vertical-align: bottom;
 				}
 			}
 		}
