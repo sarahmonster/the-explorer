@@ -287,7 +287,7 @@ a:hover i {
 			}
 		}
 		
-		.services, h2, p {
+		.services, h2, h3, p {
 			text-align: left;
 			clear: both;
 		}
@@ -307,6 +307,28 @@ a:hover i {
 			font-family: $sans-serif;
 			@include box-shadow;
 			border-left: 6px solid darken($purple, 10%);
+		}
+		
+		p.intro, p:first-of-type {
+			font-size: 1.2em;	
+			line-height: 1.4em;
+			color: $grey;
+			font-family: $sans-serif;
+		}
+		
+		h3 {
+			display: inline-block;
+			float: left;	
+			padding: 5px 7px;
+			background: lighten($purple, 10%);
+			color: lighten($purple, 60%);
+			text-shadow: 1px 1px 1px darken($purple, 5%);
+			font-size: .85em;
+			font-weight: 400;			
+		}
+		
+		p {
+			font-size: .8em;
 		}
 		
 	}
