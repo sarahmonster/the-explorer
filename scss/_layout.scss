@@ -4,11 +4,16 @@
 	background: url('../images/blu_stripes.png');
 	padding: 70px 20px 20px;
 }
-
+h1 {
+	color: $purple;
+}
+h2 {
+	color: $blue;
+}
 h3 {
 	font-family: $sans-serif;
 	font-weight: 600;
-	color: lighten($blue, 20%);
+	color: lighten($blue, 10%);
 }
 
 strong {
@@ -65,7 +70,7 @@ strong {
 	color: $white;
 	
 	h1 {
-		color: lighten($blue, 30%);
+		color: lighten($blue, 40%);
 		margin: 1em 0 .5em;
 	}
 	.intro {
@@ -77,7 +82,7 @@ strong {
 	
 	strong {
 		font-weight: 500;
-		background-color: darken($purple, 30%);
+		background-color: darken($purple, 40%);
 		color: lighten($purple, 30%);
 	}
 	
@@ -208,6 +213,7 @@ strong {
 		font-size: 1.2em;
 		font-style: italic;
 		margin: 2em 0 1em;
+		color: lighten($grey, 40%);
 				
 		&::before {
 			content: ('\201C');
@@ -277,17 +283,6 @@ strong {
 
 /* contact section */
 #contact {
-	
-	h1 {
-		color: lighten($blue, 30%);
-		margin: 1em 0 .5em;
-	}
-	.intro {
-		font-size: 1.7em;
-		line-height: 1.4em;
-		font-family: $sans-serif;
-		font-weight: 300;
-	}
 	
 	img {
 		@include circular;
