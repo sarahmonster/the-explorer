@@ -1,3 +1,15 @@
+/* Fade in effect */
+body.js {
+	background: $black;
+	@include css-gradient($from: darken($purple, 10%), $to: darken($black, 10%));
+	opacity: 0;
+	
+	&.loaded {
+		opacity: 1;
+		@include transition(1250ms ease-in-out opacity);
+	}
+}
+
 /* general rules */ 
 .panel {
 	min-height: 100%; 
