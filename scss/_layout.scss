@@ -434,7 +434,7 @@ a:hover i {
 		p {
 			font-size: .9em;
 			line-height: 1.2em;
-			margin:  .5em;
+			margin:  .5em 3em;
 			text-align: center;
 		}
 	}
@@ -444,12 +444,17 @@ a:hover i {
 
 /* contact section */
 #contact {
+	background: url('../images/backgrounds/rocketship.png') no-repeat center;
+	padding-top: 160px;
 	
 	img {
 		@include circular;
 		margin-bottom: 2em;
 	}
 	
+	h4 {
+		margin-top: 100px;
+	}
 	ul {
 		list-style-type: none;
 		margin: 0;
