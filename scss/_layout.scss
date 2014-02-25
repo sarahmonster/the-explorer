@@ -444,7 +444,7 @@ a:hover i {
 
 /* contact section */
 #contact {
-	background: url('../images/backgrounds/rocketship.png') no-repeat center;
+	background: url('../images/backgrounds/rocketship.png') no-repeat top center;
 	padding-top: 160px;
 	
 	img {
@@ -453,7 +453,7 @@ a:hover i {
 	}
 	
 	h4 {
-		margin-top: 100px;
+		margin-top: 170px;
 	}
 	ul {
 		list-style-type: none;
@@ -463,5 +463,18 @@ a:hover i {
 			padding: 0;
 			margin: 4px 0;
 		}
+	}
+	
+	footer {
+		position: absolute;
+		left: 50%;
+		margin-left: -31.25rem;
+		bottom: 0;
+		
+		p {
+			color: $white;
+			font-size: .8em;
+		}
+	
 	}
 }
