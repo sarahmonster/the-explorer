@@ -58,6 +58,10 @@ CIRCLE
 	border-radius: 100%;
 	border: 10px solid $white;
     @include box-shadow;
+    
+    @media all and (max-width: 960px) {
+    	border-width: 6px;
+    }
 }
 
 

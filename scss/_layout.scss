@@ -118,10 +118,17 @@ a:hover i {
 	
 }
 
-/* hide certain classes on portrait-oriented tablets */
+/* hide or show certain classes on portrait-oriented tablets */
+.portrait-show {
+	display: none;
+}
 @media screen and (orientation:portrait) and (min-width: 640px) {
 	.portrait-hide {
 		display: none;
+	}
+	
+	.portrait-show {
+		display: block;
 	}
 }
 
@@ -200,7 +207,10 @@ a:hover i {
 
 /* hello section */
 #hello {
-	background: darken($purple, 40%) url('../images/backgrounds/stars.png') no-repeat top center;
+	background: url('../images/backgrounds/planet-rocket.png') no-repeat 95% 5%, 
+				url('../images/backgrounds/stars.png') no-repeat top center, 
+				darken($purple, 40%);
+	background-size: 326px 219px, cover;
 	color: $white;
 	
 	h1 {
@@ -212,6 +222,12 @@ a:hover i {
 			color: lighten($blue, 30%);
 		}
 	}
+	img.portrait-hide {
+		float: left; 
+		width: 31%;
+		margin: 0 2% 4% 0;
+	}
+	
 	.intro {
 		font-size: 1.7em;
 		line-height: 1.4em;
