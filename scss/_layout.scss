@@ -200,8 +200,7 @@ a:hover i {
 
 /* hello section */
 #hello {
-	@include css-gradient($from: darken($purple, 10%), $to: darken($black, 10%));
-	background: darken($purple, 10%) url('../images/backgrounds/stars.png') no-repeat top center;
+	background: darken($purple, 40%) url('../images/backgrounds/stars.png') no-repeat top center;
 	color: $white;
 	
 	h1 {
@@ -239,7 +238,7 @@ a:hover i {
 
 /* about section */
 #about {
-	background: url('../images/backgrounds/clouds.png') no-repeat center;
+	background: darken($white, 7%) url('../images/backgrounds/clouds.png') no-repeat top center;
 
 	.row {
 		margin-top: 2em;
