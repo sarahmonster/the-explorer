@@ -473,7 +473,11 @@ a:hover i {
 		
 		p {
 			color: $white;
-			font-size: .8em;
+			font-size: .7em;
+			
+			a {
+				color: $pink;
+			}
 		}
 	
 	}
