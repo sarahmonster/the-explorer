@@ -118,7 +118,12 @@ a:hover i {
 	
 }
 
-
+/* hide certain classes on portrait-oriented tablets */
+@media screen and (orientation:portrait) {
+	.portrait-hide {
+		display: none;
+	}
+}
 
 
 
@@ -167,20 +172,8 @@ a:hover i {
 				}
 			}
 		}
-	}
-}
-[data-magellan-expedition-clone] {
-	height: 0;
-}
-
-
-
-@media all and (max-width: 960px) {
-
-	[data-magellan-expedition] {
 		
-		.sub-nav {
-			
+		@media all and (max-width: 960px) {
 			dd {
 				margin: 0 0;
 				
@@ -196,6 +189,13 @@ a:hover i {
 		}
 	}
 }
+[data-magellan-expedition-clone] {
+	height: 0;
+}
+
+
+
+
 
 
 /* hello section */
