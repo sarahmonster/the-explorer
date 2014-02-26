@@ -484,8 +484,12 @@ a:hover i {
 
 /* contact section */
 #contact {
-	background: url('../images/backgrounds/rocketship.png') no-repeat top center;
 	padding-top: 160px;
+		background: url('../images/backgrounds/rocketship.png') no-repeat calc(50%+400px) -130px,
+					url('../images/backgrounds/planet-surface.png') no-repeat bottom center, 
+					url('../images/backgrounds/pink-sky.png') repeat-y top center, 
+					$pink;
+	background-size: 555px 1130px, cover, cover;
 	
 	img {
 		@include circular;
