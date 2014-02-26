@@ -119,7 +119,7 @@ a:hover i {
 }
 
 /* hide certain classes on portrait-oriented tablets */
-@media screen and (orientation:portrait) {
+@media screen and (orientation:portrait) and (min-width: 640px) {
 	.portrait-hide {
 		display: none;
 	}
