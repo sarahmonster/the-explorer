@@ -145,6 +145,7 @@ a:hover i {
 				color: darken($white, 20%);
 				padding: 10px 20px;
 				display: inline-block;
+				@include transition(200ms ease-out all);
 				
 				i {
 					margin-right: 10px;
