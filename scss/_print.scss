@@ -1,0 +1,69 @@
+@page {
+  size: auto;   /* auto is the initial value */
+  margin: 10% 5%;
+  font-size: 80%;
+}
+
+.magellan-container {
+	display: none;
+}
+
+img {
+	display: none;
+}
+
+.button, .button:visited {
+	padding: 0;
+	margin: 0;
+	display: none;
+
+	span {
+		display: inline;
+	}	
+}
+
+
+.portfolio-piece {
+	border: none;
+	
+	.project-writeup {
+		border: none;
+		
+		.services {
+			margin: 0 0 .5cm 0;
+			padding: 0 0 .25cm 0;
+			border-bottom: 1px solid $grey;
+			border-left: 0;
+		}
+		
+		h3 {
+			padding: 0;
+			font-weight: bolder;
+		}
+	}
+	
+	blockquote {
+		border: none;
+	}
+}
+
+
+.panel {
+	
+	&::before {
+		display: none;
+	}
+}
+
+
+
+#contact {
+	
+	footer {
+		position: relative;
+		margin: 1cm 0 0 0;
+		border-top: 1px solid $grey;
+		padding: .25cm 0 0 0;
+		left: 0;
+	}
+}

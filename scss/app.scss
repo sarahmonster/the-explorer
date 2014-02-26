@@ -42,3 +42,8 @@
 //   "foundation/components/visibility";
 
 @import "layout";
+
+
+@media print {
+	@import "print";
+}
