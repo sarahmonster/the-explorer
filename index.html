@@ -12,9 +12,25 @@
   
   <body>
 
-  
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
 
-<div class="magellan-container" data-magellan-expedition="fixed" data-options="destination_threshold:65;throttle_delay:300;">
+    <a class="right-off-canvas-toggle show-for-small-only menu-icon"><span>Menu</span></a> 
+
+    <!-- Mobile Menu -->
+    <aside class="right-off-canvas-menu">
+		<ul class="off-canvas-list">
+			<li><a href="#hello"><i class="icon-rocket"></i>Hello!</a></li> 
+			<li><a href="#about"><i class="icon-fire"></i>About Me</a></li>
+			<li><a href="#fit"><i class="icon-heart5"></i>Why <span>You&rsquo;ll Love</span> Me</a></li> 
+			<li><a href="#work"><i class="icon-hammer"></i>My Work</a></li>
+			<li><a href="#contact"><i class="icon-bubbles3"></i>Let&rsquo;s Chat!</a></li>
+		</ul>
+    </aside>
+    
+      
+
+<div class="magellan-container hide-for-small" data-magellan-expedition="fixed" data-options="destination_threshold:65;throttle_delay:300;">
   <dl class="sub-nav">
 		<dd data-magellan-arrival="hello"><a href="#hello"><i class="icon-rocket"></i>Hello!</a></dd> 
 		<dd data-magellan-arrival="about"><a href="#about"><i class="icon-fire"></i>About Me</a></dd>
@@ -25,12 +41,13 @@
 </div>
 
 
+
+
+<!-- HELLO PANEL -->
+
 <div class="panel" data-magellan-destination="hello" id="hello">
 	
-	<div class="row">
-	
-      	
-      
+	<div class="row">      
       <div class="large-12 medium-12 column">
 		<img class="hide-for-portrait sarahface" src="images/photos/sarah-semark.jpg" alt="Sarah Semark">		
         <h1><span>Hello!</span> I&rsquo;m Sarah.</h1>
@@ -67,7 +84,7 @@
 
 
 
-
+<!-- ABOUT PANEL -->
 <div class="panel" data-magellan-destination="about" id="about">
 	<div class="row">
 	
@@ -198,7 +215,7 @@
 
 
 
-
+<!-- PORTFOLIO PANEL -->
 <div class="panel" data-magellan-destination="work" id="work">
 
 
@@ -414,7 +431,7 @@
 
 
 
-
+<!-- CONTACT PANEL -->
 <div class="panel" data-magellan-destination="contact" id="contact">
 	<div class="row">
 	
@@ -449,7 +466,13 @@
 
 </div><!-- end .panel -->
 
-	
+
+
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>	
   
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.js"><\/script>')</script>
