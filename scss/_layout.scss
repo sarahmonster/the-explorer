@@ -118,7 +118,7 @@ a:hover i {
 	
 }
 
-/* hide or show certain classes on portrait-oriented tablets */
+/* reusable classes to hide or show certain classes on certain devices or orientations */
 .portrait-show {
 	display: none;
 }
@@ -131,7 +131,11 @@ a:hover i {
 		display: block;
 	}
 }
-
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+	.tablet-hide {
+		display: none;
+	}
+}
 
 
 
@@ -484,12 +488,21 @@ a:hover i {
 
 /* contact section */
 #contact {
-	padding-top: 170px;
+	padding-top: 175px;
 	background: url('../images/backgrounds/rocketship.png') no-repeat calc(50%+400px) -130px,
 				url('../images/backgrounds/planet-surface.png') no-repeat bottom center, 
 				url('../images/backgrounds/pink-sky.jpg') repeat-y top center, 
 				$pink;
 	background-size: 555px 1130px, cover, cover;
+	
+	@media screen and (max-width: 1024px) {
+		background-position: calc(50%+290px) -130px, center, center;
+	}
+	
+	@media screen and (orientation: portrait) {
+		background-position: calc(50%+250px) -100px, center, center;
+		padding-top: 210px;
+	}
 	
 	img {
 		@include circular;
@@ -499,7 +512,11 @@ a:hover i {
 		
 		&:nth-of-type(2) {
 			color: $purple;
-			margin-top: 3em;
+			margin-top: 5em;
+			
+			@media screen and (orientation: portrait) {
+				margin-top: 8em;
+			}
 		}
 	}
 	
