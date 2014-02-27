@@ -45,6 +45,10 @@
 
 @import "layout";
 
+@media #{$small-only} {
+	@import "mobile";
+}
+
 @media print {
 	@import "print";
 }
