@@ -118,25 +118,6 @@ a:hover i {
 	
 }
 
-/* reusable classes to hide or show certain classes on certain devices or orientations */
-.portrait-show {
-	display: none;
-}
-@media screen and (orientation:portrait) and (min-width: 640px) {
-	.portrait-hide {
-		display: none;
-	}
-	
-	.portrait-show {
-		display: block;
-	}
-}
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-	.tablet-hide {
-		display: none;
-	}
-}
-
 
 
 /* navigation bar */
@@ -226,7 +207,7 @@ a:hover i {
 			color: lighten($blue, 30%);
 		}
 	}
-	img.portrait-hide {
+	img.sarahface {
 		float: left; 
 		width: 31%;
 		margin: 0 2% 4% 0;

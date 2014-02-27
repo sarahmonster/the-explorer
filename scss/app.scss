@@ -37,12 +37,13 @@
 //   "foundation/components/thumbs",
    "foundation/components/tooltips",
    "foundation/components/top-bar",
-  "foundation/components/type";
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+   "foundation/components/type",
+   "foundation/components/offcanvas",
+   "foundation/components/visibility";
+
+@import "visibility-overrides";
 
 @import "layout";
-
 
 @media print {
 	@import "print";
