@@ -291,42 +291,16 @@ a:hover i {
 
 /* portfolio section */
 #work {
-	background: url('../images/backgrounds/dark_leather_@2X.png');
-	background-size: 398px 484px;
-}
-#work > :first-child {
-	margin-top: 6em;
+	padding: 0;
+	background: pink;
 }
 
-.portfolio-piece {
-	border: 20px solid lighten($grey, 50%);
-	margin-top: 12em;
-	position: relative;
-	@include box-shadow;
-	padding-bottom: 2em;
-	background-size: cover;
-	
-	.project-writeup {
+.project-overview {
 		background: rgba(255, 255, 255, .75);
 		margin-top: 4em;
 		border-bottom: 6px solid darken($purple, 10%);
 		@include box-shadow;
 		text-align: center;
-		
-		.responsive {
-			max-width: 130%;
-			margin-left: -15%;
-		}
-		
-		.overlap {
-			margin-top: -12em;
-			
-			&.detail {
-				width: 48%;
-				margin-left: 26%;
-				margin-right: 26%;
-			}
-		}
 		
 		.services, h2, h3, p {
 			text-align: left;
@@ -356,70 +330,23 @@ a:hover i {
 			color: $grey;
 			font-family: $sans-serif;
 		}
-		
-		h3 {
-			display: inline-block;
-			float: left;	
-			padding: 5px 7px;
-			background: lighten($purple, 10%);
-			color: lighten($purple, 60%);
-			text-shadow: 1px 1px 1px darken($purple, 5%);
-			font-size: .85em;
-			font-weight: 400;			
-		}
-		
-		p {
-			font-size: .8em;
-		}
-		
-	}
 	
-	.detail {
-		@include circular;
-		margin-top: 2em;
-		@include filter(grayscale(80%));
-		filter: url(../svg/filters.svg#greyscale);
-		
-		&:hover {
-			@include filter(grayscale(0%));
-			filter: url(../svg/filters.svg#colour);
-		}
-  	}
-	
-	blockquote {
-		font-size: 1.2em;
-		font-style: italic;
-		margin: 2em 0 1em;
-		color: lighten($grey, 30%);
-				
-		&::before {
-			content: ('\201C');
-			font-size: 5em;
-			margin: -.25em 0 0 -.5em;
-			float: left;
-			font-style: normal;
-		}
-	}
+}
+
+
+.project-details {
 
 }
 
-.invert {
-	border-color: darken($grey, 20%);
-	
-	.project-writeup {
-		background: lighten($pink, 15%);
-	}
-	
-	blockquote {
-		color: darken($grey, 10%);
-	}
-	
-}
+
+
+#eltettensor, #cascades, #zombies, #triggersandsparks, #other {display: none;}
 
 #wickeremporium {
 	background: url('../images/work/wicker-emporium/bg2.jpg');
 }
 #eltettensor {
+
 	background: url('../images/work/el-tettensor-author-website/bg.jpg');
 }
 #cascades {
