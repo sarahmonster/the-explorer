@@ -27,9 +27,9 @@ body.js {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 5px;
-		background: $white;
-		@include box-shadow (0px, 0px, 2px, rgba(0, 0, 0, .5));
+		height: 2px;
+		background: lighten($pink, 20%);
+		@include box-shadow (0px, 0px, 1px, rgba(0, 0, 0, .25));
 	}
 }
 h1 {
@@ -365,7 +365,8 @@ a:hover i {
 
 
 .project-details {
-	background: $white;
+	background: lighten($grey, 20%) url('../images/backgrounds/pinstriped_suit_@2X.png');
+	background-size: 400px 333px;
 	text-align: center;
 	padding-bottom: 2em;
 	padding-top: 2em;
