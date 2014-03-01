@@ -17,6 +17,10 @@ p {
 }
 .panel {
 	padding-top: 0;
+	
+	&::before {
+		display: none;
+	}
 }
 
 
@@ -43,4 +47,10 @@ p {
 	}		
 }
 
-#about, #work, #contact {display: none;}
+#about {
+	
+}
+
+
+
+#work, #contact {display: none;}
