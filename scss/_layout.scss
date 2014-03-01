@@ -412,13 +412,10 @@ a:hover i {
 
 
 
-#eltettensor, #cascades, #zombies, #triggersandsparks, #other {display: none;}
-
 #wickeremporium {
 	background: url('../images/work/wicker-emporium/bg2.jpg');
 }
 #eltettensor {
-
 	background: url('../images/work/el-tettensor-author-website/bg.jpg');
 }
 #cascades {
@@ -436,15 +433,11 @@ a:hover i {
 	padding-bottom: 2em;
 	background: url('../images/backgrounds/map.jpg');
 	
-	.row::before {
-		display: none;
-	}
-	
 	h1 {
 		text-align: center;
 	}
 	
-	.project-writeup {
+	.project-overview {
 		padding: 5px;
 		border: 0;
 		width: 32%;
