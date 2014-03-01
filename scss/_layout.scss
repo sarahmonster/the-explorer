@@ -1,7 +1,6 @@
 /* Fade in effect */
 body.js {
-	background: $black;
-	@include css-gradient($from: darken($purple, 10%), $to: darken($black, 10%));
+	background: $white;
 	opacity: 0;
 	
 	&.loaded {
@@ -295,6 +294,10 @@ a:hover i {
 	background: pink;
 }
 
+.project {
+	border-bottom: 1px solid $black;
+}
+
 .project-overview {
 		background: rgba(255, 255, 255, .75);
 		margin-top: 4em;
@@ -335,7 +338,76 @@ a:hover i {
 
 
 .project-details {
-
+	background: $white;
+	text-align: center;
+	
+		img {
+			margin: 10px 0 10px 0;
+		}
+	
+		h3, p {
+			text-align: left;
+			clear: both;
+		}
+	
+		.responsive {
+			max-width: 130%;
+			margin-left: -20%;
+			margin-bottom: 2em;
+		}
+		
+		.overlap {
+			margin-top: -6em;
+			
+			&.detail {
+				width: 48%;
+				margin-left: 26%;
+				margin-right: 26%;
+			}
+		}
+		
+		h3 {
+			display: inline-block;
+			float: left;
+			clear: left;	
+			padding: 5px 7px;
+			background: lighten($purple, 10%);
+			color: lighten($purple, 60%);
+			text-shadow: 1px 1px 1px darken($purple, 5%);
+			font-size: .85em;
+			font-weight: 400;			
+		}
+		
+		p {
+			font-size: .8em;
+		}
+			
+		.detail {
+			@include circular;
+			margin-top: 2em;
+			@include filter(grayscale(80%));
+			filter: url(../svg/filters.svg#greyscale);
+		
+			&:hover {
+				@include filter(grayscale(0%));
+				filter: url(../svg/filters.svg#colour);
+			}
+		}
+	
+		blockquote {
+			font-size: 1.2em;
+			font-style: italic;
+			margin: 2em 0 1em;
+			color: lighten($grey, 30%);
+					
+			&::before {
+				content: ('\201C');
+				font-size: 5em;
+				margin: -.25em 0 0 -.5em;
+				float: left;
+				font-style: normal;
+			}
+		}
 }
 
 
