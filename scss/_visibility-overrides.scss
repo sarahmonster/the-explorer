@@ -48,6 +48,23 @@
       &.hide-for-xxlarge-up,
       &.hide-for-xxlarge-only { display: inline !important; }
     }
+    span {
+	  &.show-for-small,
+      &.show-for-small-only,
+      &.hide-for-medium,
+      &.hide-for-medium-down,
+      &.hide-for-medium-up,
+      &.hide-for-medium-only,
+      &.hide-for-large-down,
+      &.show-for-large,
+      &.show-for-large-up,
+      &.show-for-large-only,
+      &.show-for-xlarge,
+      &.show-for-xlarge-up,
+      &.show-for-xlarge-only,
+      &.show-for-xxlarge-up,
+      &.show-for-xxlarge-only { display: none !important; }
+    }
   }
 
   /* Large Displays: 1024px and up */
