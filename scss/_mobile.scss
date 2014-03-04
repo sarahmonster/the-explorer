@@ -33,6 +33,12 @@ p {
 		display: block !important;
 		width: 70%;
 		margin: 10% 15% -5%;
+		
+		@media #{$landscape} {
+			float: left;
+			width: 35%;	
+			margin: 40px 20px 10px;
+		}
 	}
 	
 	h1 {
