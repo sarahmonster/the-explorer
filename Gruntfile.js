@@ -2,6 +2,33 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    copy: {
+      main: {
+        files: [
+          {expand: true, src: ['fonts/**'], dest: 'dist/'},
+          {expand: true, src: ['images/**'], dest: 'dist/'},
+          {expand: false, src: ['humans.txt'], dest: 'dist/humans.txt'},
+          {expand: false, src: ['robots.txt'], dest: 'dist/robots.txt'},
+          {expand: false, src: ['index.html'], dest: 'dist/index.html'},
+        ]
+      }
+    },
+
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 7,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'dist/images/',
+          src: '{,*/}*.{png,jpg,jpeg}',
+          dest: 'dist/images/'
+        }]
+      }
+    },
+
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -11,13 +38,43 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
-        }        
+          'dist/css/app.css': 'scss/app.scss'
+        }
+      }
+    },
+
+    uglify: {
+      dist: {
+        options: {
+          mangle: {
+            except: ['jQuery']
+          },
+          outputStyle: 'compressed'
+        },
+        files: {
+          'dist/js/app.js': [
+            'bower_components/modernizr/modernizr.js',
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/foundation/js/foundation.js',
+            'bower_components/foundation/js/foundation/foundation.magellan.js',
+            'js/app.js'
+          ]
+        }
       }
     },
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
+
+      copy: {
+        files: ['fonts/**', 'images/**', 'index.html', 'humans.txt', 'robots.txt'],
+        tasks: ['copy']
+      },
+
+      uglify: {
+        files: 'js/*.js',
+        tasks: ['uglify']
+      },
 
       sass: {
         files: 'scss/**/*.scss',
@@ -27,8 +84,12 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
-}
+  grunt.registerTask('build', ['copy', 'imagemin', 'sass', 'uglify']);
+  grunt.registerTask('prewatch', ['copy', 'sass', 'uglify']);
+  grunt.registerTask('default', ['prewatch','watch']);
+};
