@@ -363,13 +363,6 @@ a:hover i {
 			margin: 1.5em 0 0 0;
 			border: 1px solid $white;
 			@include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, .25));
-			@include filter(grayscale(70%));
-			filter: url(../svg/filters.svg#greyscale);
-				
-			&:hover {
-				@include filter(grayscale(0%));
-				filter: url(../svg/filters.svg#colour);
-			}
 		}
 		
 		.detail {
