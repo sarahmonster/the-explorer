@@ -528,10 +528,19 @@ a:hover i {
 	ul {
 		list-style-type: none;
 		margin: 0;
+		font-family: $sans-serif;
+		font-weight: 400;
+		font-size: .9em;
 		
 		li {
 			padding: 0;
-			margin: 4px 0;
+			margin: 8px 0;
+			line-height: 16px;
+			
+			i {
+				vertical-align: middle;
+				margin-top: -3px;
+			}
 		}
 	}
 	
