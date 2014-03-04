@@ -290,6 +290,10 @@ a:hover i {
 	padding-top: 6em;
 	padding-bottom: 2em;
 	background: url('../images/backgrounds/map.jpg');
+	
+	.project-overview {
+		padding-top: 1em;
+	}
 }
 
 
@@ -299,7 +303,6 @@ a:hover i {
 
 .project-overview {
 		background: rgba(255, 255, 255, .75);
-		margin-top: 0;
 		border-bottom: 6px solid darken($purple, 10%);
 		@include box-shadow;
 		text-align: center;
