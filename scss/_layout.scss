@@ -290,9 +290,11 @@ a:hover i {
 #work {
 	padding-top: 6em;
 	padding-bottom: 2em;
-	background: url('../images/backgrounds/map.jpg');
+	background: url('../images/backgrounds/work.jpg');
+	background-size: cover;
 	
 	.project-overview {
+		margin-top: 20em;
 		padding-top: 1em;
 	}
 }
@@ -451,6 +453,7 @@ a:hover i {
 	padding-top: 6em;
 	padding-bottom: 2em;
 	background: url('../images/backgrounds/map.jpg');
+	background-size: cover;
 	
 	h1 {
 		text-align: center;
