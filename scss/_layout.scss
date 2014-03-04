@@ -19,6 +19,7 @@ body.js {
 	padding: 70px 20px 20px;
 	border: 0;
 	position: relative;
+	overflow-x: hidden;
 	
 	&::before {
 		content: '';
