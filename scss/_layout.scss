@@ -507,9 +507,17 @@ a:hover i {
 	h3 {
 		margin-top: .5em;
 		
+		span {
+			color: $purple;
+		}
+		
 		&:nth-of-type(2) {
 			color: $purple;
 			margin-top: 5em;
+			
+			span {
+				color: $blue;
+			}
 			
 			@media screen and (orientation: portrait) {
 				margin-top: 8em;
