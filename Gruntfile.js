@@ -14,21 +14,6 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7,
-          progressive: true
-        },
-        files: [{
-          expand: true,
-          cwd: 'dist/images/',
-          src: '{,*/}*.{png,jpg,jpeg}',
-          dest: 'dist/images/'
-        }]
-      }
-    },
-
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -85,11 +70,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['copy', 'imagemin', 'sass', 'uglify']);
-  grunt.registerTask('prewatch', ['copy', 'sass', 'uglify']);
-  grunt.registerTask('default', ['prewatch','watch']);
+  grunt.registerTask('build', ['copy', 'sass', 'uglify']);
+  grunt.registerTask('default', ['build','watch']);
 };
