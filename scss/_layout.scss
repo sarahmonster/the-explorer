@@ -142,7 +142,7 @@ a:hover i {
 			
 			a {
 				color: darken($white, 20%);
-				padding: 10px 20px;
+				padding: 10px 30px;
 				display: inline-block;
 				@include transition(200ms ease-out all);
 				
@@ -171,8 +171,8 @@ a:hover i {
 				margin: 0 0;
 				
 				a {
-					padding-right: 10px;
-					padding-left: 10px;
+					padding-right: 20px;
+					padding-left: 20px;
 					
 					span {
 						display: none;
