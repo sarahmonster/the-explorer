@@ -198,10 +198,10 @@ a:hover i {
 
 /* hello section */
 #hello {
-	background: url('../images/backgrounds/planet-rocket.png') no-repeat 95% 5%, 
+	background: url('../images/backgrounds/planet-rocket.png') no-repeat 105% -5%, 
 				url('../images/backgrounds/stars.jpg') no-repeat top center, 
 				darken($purple, 40%);
-	background-size: 326px 219px, cover;
+	background-size: 504px 401px, cover;
 	color: $white;
 	
 	h1 {
