@@ -1,19 +1,4 @@
-/* Fade in effect */
-body.js {
-	background: $white;
-	opacity: 0;
-	
-	&.loaded {
-		opacity: 1;
-		@include transition(1250ms ease-in-out opacity);
-	}
-}
-
 /* general rules */ 
-.off-canvas-wrap, .inner-wrap {
-	height: 100%;
-}
-
 .panel {
 	min-height: 100%; 
 	padding: 70px 20px 20px;
@@ -200,7 +185,7 @@ a:hover i {
 #hello {
 	background: url('../images/backgrounds/planet-rocket.png') no-repeat 105% -5%, 
 				url('../images/backgrounds/stars.jpg') no-repeat top center, 
-				darken($purple, 40%);
+				darken($purple, 30%);
 	background-size: 504px 401px, cover;
 	color: $white;
 	
