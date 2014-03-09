@@ -287,6 +287,7 @@ a:hover i {
 	padding-bottom: 2em;
 	background: url('../images/backgrounds/work.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 	
 	.project-overview {
 		margin-top: 20em;
@@ -297,6 +298,7 @@ a:hover i {
 
 .project {
 	border-bottom: 1px solid $black;
+	background-attachment: fixed;
 }
 
 .project-overview {
@@ -429,25 +431,25 @@ a:hover i {
 
 
 #wickeremporium {
-	background: url('../images/work/wicker-emporium/bg.jpg');
+	background-image: url('../images/work/wicker-emporium/bg.jpg');
 }
 #eltettensor {
-	background: url('../images/work/el-tettensor-author-website/bg.jpg');
+	background-image: url('../images/work/el-tettensor-author-website/bg.jpg');
 }
 #cascades {
-	background: url('../images/work/cascades-day-spa-website/bg2.jpg');
+	background-image: url('../images/work/cascades-day-spa-website/bg2.jpg');
 }
 #zombies {
-	background: url('../images/work/zombies-ate-lauren/bg.jpg');
+	background-image: url('../images/work/zombies-ate-lauren/bg.jpg');
 }
 #triggersandsparks {
-	background: url('../images/work/triggers-and-sparks/bg.jpg');
+	background-image: url('../images/work/triggers-and-sparks/bg.jpg');
 }
 
 #other {
 	padding-top: 6em;
 	padding-bottom: 2em;
-	background: url('../images/backgrounds/map.jpg');
+	background-image: url('../images/backgrounds/map.jpg');
 	background-size: cover;
 	
 	h1 {
