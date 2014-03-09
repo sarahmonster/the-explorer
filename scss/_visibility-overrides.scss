@@ -75,7 +75,7 @@
       &.hide-for-small-only,
       &.hide-for-medium,
       &.hide-for-medium-down,
-      &.hide-for-medium-only,
+      &.hide-for-medium-only
       &.show-for-medium-up,
       &.show-for-large,
       &.show-for-large-up,
@@ -85,6 +85,24 @@
       &.hide-for-xlarge-only,
       &.hide-for-xxlarge-up,
       &.hide-for-xxlarge-only { display: inline !important; }
+    }
+    
+    span {
+	  &.show-for-small,
+      &.show-for-small-only,
+      &.show-for-medium,
+      &.show-for-medium-down,
+      &.show-for-medium-up,
+      &.show-for-medium-only,
+      &.hide-for-large-down,
+      &.hide-for-large,
+      &.hide-for-large-up,
+      &.hide-for-large-only,
+      &.show-for-xlarge,
+      &.show-for-xlarge-up,
+      &.show-for-xlarge-only,
+      &.show-for-xxlarge-up,
+      &.show-for-xxlarge-only { display: none !important; }
     }
 
   }
