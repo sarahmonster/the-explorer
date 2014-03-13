@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
+          {expand: true, src: ['sarah-semark.pdf'], dest: 'dist/'},
           {expand: true, src: ['fonts/**'], dest: 'dist/'},
           {expand: true, src: ['images/**'], dest: 'dist/'},
           {expand: false, src: ['humans.txt'], dest: 'dist/humans.txt'},
