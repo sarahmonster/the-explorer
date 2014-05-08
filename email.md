@@ -117,3 +117,90 @@ I’m a designer with a very strong technical background—most of the websites 
 In short: I think I’d be a great fit for you, and this is just the challenge I’m looking for! I’d love to talk further about working together. 
 
 Thanks!
+
+
+
+----- AUTOMATTIC ----
+
+Hi Automattic!
+
+I’m Sarah, and I’m a graphic designer, web developer, and world traveller. I’d love to work with you to help make WordPress even better. I've been using WordPress for a variety of different projects over the past six years, and I have many of my clients' themes at https://github.com/sarahsemark.
+
+You can learn more about me and what I do at hire.sarahsemark.com
+
+The most important thing to know is this: I absolutely adore design. I've been building websites on a freelance basis full-time for the last eight years. I'm detail-oriented and I love making beautiful, usable things. I’m passionate, enthusiastic, and effective, and my clients love me as a result.
+
+I’m a designer with a very strong technical background—most of the websites I've made I've also developed myself. As such, I have a good understanding of the limitations of the medium and I have a symbiotic relationship with developers. I use git on a daily basis, and I'm not afraid of the terminal.
+
+I'm an excellent multi-tasker and I have a wide range of skills—from Rails to PHP, SASS to JavaScript. Since I've been primarily travelling while running my business, I've developed fantastic communication skills, and I'm great at remote work.
+
+In short: I think I’d be a great fit for you, and this is just the challenge I’m looking for! I’d love to talk further about working together. 
+
+Thanks!
+
+
+
+----- LEFT + RIGHT ----
+
+Hello!
+
+I’m Sarah, and I’m a graphic designer, web developer, and world traveller. I’d love to work with you to help solve your clients' problems and create beautiful, functional things.
+
+You can learn more about me and what I do at hire.sarahsemark.com
+
+The most important thing to know is this: I absolutely adore design. I've been building websites on a freelance basis full-time for the last eight years. I'm detail-oriented and I love making beautiful, usable things. I’m passionate, enthusiastic, and effective, and my clients love me as a result.
+
+I’m a designer with a very strong technical background—most of the websites I've made I've also developed myself. As such, I have a good understanding of the limitations of the medium and I have a symbiotic relationship with developers. I use git on a daily basis, and I'm not afraid of the terminal.
+
+I'm an excellent multi-tasker and I have a wide range of skills. I've done print design, illustration, logo design, and icon design, as well as server-side programming (mostly Rails and PHP) and front-end programming (HTML, CSS, Sass, and JavaScript). My experience running my own business means that I'm fantastic at managing my time and delivering quality work within a given timeline and budget. I've travelled extensively while running my business, and as such I've developed fantastic communication skills. I'm great at remote work.
+
+In short: I think I’d be a great fit for your team, and this is just the challenge I’m looking for! I’d love to talk further about working together. 
+
+Thanks!
+
+sarah semark
+
+
+----- YOU NEED A BUDGET -------
+
+Hello Adam (and everyone else at YNAB)!
+
+I’m Sarah, and I’m a graphic designer, web developer, and world traveller. I’d love to work with you to help people get their personal finances under control. 
+
+You can learn more about me and what I do at hire.sarahsemark.com
+
+The most important thing to know is this: I absolutely adore design. I've been building websites on a freelance basis full-time for the last eight years. I'm detail-oriented and I love making beautiful, usable things. I’m passionate, enthusiastic, and effective, and my clients love me as a result.
+
+I’m a designer with a very strong technical background—most of the websites I've made I've also developed myself. As such, I have a good understanding of the limitations of the medium and I have a symbiotic relationship with developers. I use git on a daily basis, and I'm not afraid of the terminal.
+
+I'm an excellent multi-tasker and I have a wide range of skills. I've done print design, illustration, logo design, and icon design, as well as server-side programming (mostly Rails and PHP) and front-end programming (HTML, CSS, Sass, and JavaScript). My experience running my own business means that I'm fantastic at managing my time and delivering quality work within a given timeline and budget. I've travelled extensively while running my business, so I've developed fantastic communication skills and I'm great at remote work.
+
+In short: I think I’d be a great fit for your team, and this is just the challenge I’m looking for! I’d love to talk further about working together. 
+
+Thanks!
+
+sarah semark
+
+
+------ FOLLOW UP BOSS --------
+
+Hello, Dan!
+
+I’m Sarah, and I’m a graphic designer, web developer, and world traveller. I’d love to work with you to help real estate agents respond to leads faster and easier.
+
+You can learn more about me and what I do at hire.sarahsemark.com
+
+The most important thing to know is this: I absolutely adore design. I've been building websites on a freelance basis full-time for the last eight years. I'm detail-oriented and I love making beautiful, usable things. I’m passionate, enthusiastic, and effective, and my clients love me as a result.
+
+I’m a designer with a very strong technical background—most of the websites I've made I've also developed myself. As such, I have a good understanding of the limitations of the medium and I have a symbiotic relationship with developers. I use git on a daily basis, and I'm not afraid of the terminal.
+
+I'm an excellent multi-tasker and I have a wide range of skills. I've done print design, illustration, logo design, and icon design, as well as server-side programming (mostly Rails and PHP) and front-end programming (HTML, CSS, Sass, and JavaScript). My experience running my own business means that I'm fantastic at managing my time and delivering quality work within a given timeline and budget. I've travelled extensively while running my business, so I've developed fantastic communication skills and I'm great at remote work.
+
+In short: I think I’d be a great fit for your team, and this is just the challenge I’m looking for! I’d love to talk further about working together. 
+
+Thanks!
+
+sarah semark
+
+
+
