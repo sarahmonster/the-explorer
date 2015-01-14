@@ -321,11 +321,18 @@ a:hover i:after {
 	background-attachment: fixed;
 
 	.header {
+		color: $white;
 		text-align: center;
 
 		h1 {
-			color: $blue;
+			color: lighten($blue, 20%);
+			text-shadow: 1px 1px 2px #000;
 		}
+	}
+
+	.footer {
+		text-align: center;
+		padding-top: 3em;
 	}
 
 	.project-overview {
