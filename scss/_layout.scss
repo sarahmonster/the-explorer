@@ -1,11 +1,11 @@
-/* general rules */ 
+/* general rules */
 .panel {
-	min-height: 100%; 
+	min-height: 100%;
 	padding: 70px 20px 20px;
 	border: 0;
 	position: relative;
 	overflow-x: hidden;
-	
+
 	&::before {
 		content: '';
 		display: block;
@@ -31,7 +31,7 @@ h3 {
 	font-weight: 600;
 	color: lighten($blue, 10%);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
-	
+
 	i {
 		font-size: 24px;
 		margin: 5px 5px 0;
@@ -79,13 +79,13 @@ a i:after {
 	border-radius: 50%;
 	content: '';
 	z-index: -1;
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	top: -2px;
 	left: -2px;
 	padding: 2px;
-	@include transition(transform 4s, opacity 4s);
+	@include transition(transform 4s opacity 4s);
 }
 a:hover i:after {
 	opacity: 0;
@@ -110,7 +110,7 @@ a:hover i:after {
 	font-size: .8em;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 1px #fff;
-	
+
 	span {
 		padding: 0 15px;
 	}
@@ -129,7 +129,7 @@ a:hover i:after {
 		@include css-gradient(lighten($blue, 5%), lighten($blue, 10%));
 		@include box-shadow (-1px, -1px, 3px, rgba(0, 0, 0, .25));
 	}
-	
+
 }
 
 .icon-heart5 {
@@ -145,10 +145,10 @@ a:hover i:after {
 	border-bottom: 2px solid $white;
 	@include box-shadow;
 	padding: 0;
-	
+
 	.sub-nav {
 		text-align: center;
-		
+
 		dd {
 			float: none;
 			font-family: $sans-serif;
@@ -157,40 +157,40 @@ a:hover i:after {
 			font-weight: 400;
 			letter-spacing: 1px;
 			margin: 0 1em;
-			
+
 			a {
 				color: darken($white, 20%);
 				padding: 10px 30px;
 				display: inline-block;
-				
+
 				i {
 					margin-right: 10px;
 				}
 			}
-			
+
 			&.active a {
 				background: darken($blue, 10%);
 				border-radius: 0;
 				color: darken($white, 20%);
-				
+
 				i {
 					background: lighten($blue, 5%);
 				}
-				
+
 				&:hover i {
 					color: darken($white, 20%);
 				}
 			}
 		}
-		
+
 		@media all and (max-width: 960px) {
 			dd {
 				margin: 0 0;
-				
+
 				a {
 					padding-right: 20px;
 					padding-left: 20px;
-					
+
 					span {
 						display: none;
 					}
@@ -201,7 +201,7 @@ a:hover i:after {
 }
 [data-magellan-expedition-clone] {
 	height: 0;
-	
+
 	i {
 		display: none;
 	}
@@ -214,45 +214,45 @@ a:hover i:after {
 
 /* hello section */
 #hello {
-	background: url('../images/backgrounds/planet-rocket.png') no-repeat 105% -5%, 
-				url('../images/backgrounds/stars.jpg') no-repeat top center, 
+	background: url('../images/backgrounds/planet-rocket.png') no-repeat 105% -5%,
+				url('../images/backgrounds/stars.jpg') no-repeat top center,
 				darken($purple, 30%);
 	background-size: 504px 401px, cover;
 	color: $white;
-	
+
 	h1 {
 		color: lighten($blue, 10%);
 		margin: 1em 0 .5em;
 		text-shadow: 1px 1px 2px darken($purple, 40%);
-		
+
 		span {
 			color: lighten($blue, 30%);
 		}
 	}
 	img.sarahface {
-		float: left; 
+		float: left;
 		width: 31%;
 		margin: 0 2% 4% 0;
 	}
-	
+
 	.intro {
 		font-size: 1.7em;
 		line-height: 1.4em;
 		font-family: $sans-serif;
 		font-weight: 300;
 	}
-	
+
 	strong {
 		font-weight: 500;
 		background-color: darken($purple, 40%);
 		color: lighten($purple, 30%);
 	}
-	
+
 	img {
 		@include circular;
 		margin-bottom: 2em;
 	}
-	
+
 	&::before {
 		display: none;
 	}
@@ -267,28 +267,28 @@ a:hover i:after {
 		margin-top: 2em;
 		margin-bottom: 3em;
 	}
-	
+
 	.large-3 img {
 		@include circular;
 	}
-	
+
 	.self-starter {
 		margin-top: 2em;
 	}
-	
+
 	.graphs {
-		
+
 		h3, h4 {
 			color: $purple;
 		}
-		
+
 		img {
 			background: darken($white, 5%);
 			border: 1px solid lighten($black, 40%);
-		}	
-		
+		}
+
 		.progress {
-	
+
 			.meter {
 				color: $white;
 				line-height: 1.4em;
@@ -298,14 +298,14 @@ a:hover i:after {
 				font-family: $sans-serif;
 				text-transform: uppercase;
 				letter-spacing: 1px;
-				
+
 				i {
 					margin-top: 5px;
 				}
 			}
 		}
 	}
-	
+
 }
 
 
@@ -319,7 +319,7 @@ a:hover i:after {
 	background: url('../images/backgrounds/work.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	
+
 	.project-overview {
 		margin-top: 20em;
 		padding-top: 1em;
@@ -338,27 +338,27 @@ a:hover i:after {
 		@include box-shadow;
 		text-align: center;
 		margin-top: 12em;
-		
+
 		.responsive {
 			max-width: 130%;
 			margin-left: -15%;
 		}
-		
+
 		.overlap {
 			margin-top: -15em;
-			
+
 			&.detail {
 				width: 48%;
 				margin-left: 26%;
 				margin-right: 26%;
 			}
 		}
-		
+
 		.services, h2, h3, p {
 			text-align: left;
 			clear: both;
 		}
-		
+
 		.services {
 			text-transform: uppercase;
 			font-size: .7em;
@@ -375,14 +375,14 @@ a:hover i:after {
 			@include box-shadow;
 			border-left: 6px solid darken($purple, 10%);
 		}
-		
+
 		p.intro, p:first-of-type {
-			font-size: 1.2em;	
+			font-size: 1.2em;
 			line-height: 1.4em;
 			color: $grey;
 			font-family: $sans-serif;
 		}
-	
+
 }
 
 
@@ -392,44 +392,44 @@ a:hover i:after {
 	text-align: center;
 	padding-bottom: 2em;
 	padding-top: 2em;
-	
+
 		img {
 			margin: 1.5em 0 0 0;
 			border: 1px solid $white;
 			@include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, .25));
 		}
-		
+
 		.detail {
 			@include circular;
 			margin-top: 2em;
 		}
-	
+
 		h3, p {
 			text-align: left;
 			clear: both;
 		}
-		
+
 		h3 {
 			display: inline-block;
 			float: left;
-			clear: left;	
+			clear: left;
 			padding: 5px 7px;
 			background: lighten($purple, 10%);
 			color: lighten($purple, 60%);
 			text-shadow: 1px 1px 1px darken($purple, 5%);
 			font-size: .95em;
-			font-weight: 400;	
-			margin: 1.5em 0 .75em;		
+			font-weight: 400;
+			margin: 1.5em 0 .75em;
 		}
-		
+
 		p {
 			font-size: .9em;
 		}
-		
+
 		.button {
 			margin-top: 2em;
 		}
-				
+
 		blockquote {
 			font-size: 1.2em;
 			font-style: italic;
@@ -437,7 +437,7 @@ a:hover i:after {
 			color: lighten($grey, 10%);
 			border-top: 2px solid $grey;
 			padding: 30px 0 20px;
-					
+
 			&::before {
 				content: ('\201C');
 				font-size: 80px;
@@ -455,7 +455,7 @@ a:hover i:after {
 				left: 50%;
 				margin: -20px 0 0 -25px;
 			}
-			
+
 		}
 }
 
@@ -482,36 +482,36 @@ a:hover i:after {
 	padding-bottom: 2em;
 	background-image: url('../images/backgrounds/map.jpg');
 	background-size: cover;
-	
+
 	h1 {
 		text-align: center;
 	}
-	
+
 	.project-overview {
 		padding: 5px;
 		border: 0;
 		width: 32%;
 		margin: 0 2% 1em 0;
-		
+
 		&:last-child{
 			margin-right: 0;
 		}
-		
+
 		.services {
 			margin: -10px 0 10px -15px;
 			position: relative;
-			
+
 			@media #{$medium-only} {
 				display: none;
 			}
 		}
-		
+
 		p {
 			font-size: .9em;
 			line-height: 1.2em;
 			margin:  .5em 3em;
 			text-align: center;
-			
+
 			@media #{$medium-only} {
 				margin: .5em;
 			}
@@ -525,85 +525,85 @@ a:hover i:after {
 #contact {
 	padding-top: 175px;
 	background: url('../images/backgrounds/rocketship.png') no-repeat calc(50%+400px) -150px,
-				url('../images/backgrounds/planet-surface.png') no-repeat bottom center, 
-				url('../images/backgrounds/pink-sky.jpg') repeat-y top center, 
+				url('../images/backgrounds/planet-surface.png') no-repeat bottom center,
+				url('../images/backgrounds/pink-sky.jpg') repeat-y top center,
 				$pink;
 	background-size: 615px 1164px, cover, cover;
-	
+
 	@media screen and (max-width: 1024px) {
 		background-position: calc(50%+290px) -130px, center, center;
 	}
-	
+
 	@media screen and (orientation: portrait) {
 		background-position: calc(50%+250px) -100px, center, center;
 		padding-top: 210px;
 	}
-	
+
 	img {
 		@include circular;
 		margin-top: -4em;
 	}
 	h3 {
 		margin-top: .5em;
-		
+
 		span {
 			color: $purple;
 		}
-		
+
 		&:nth-of-type(2) {
 			color: $purple;
 			margin-top: 5em;
-			
+
 			span {
 				color: $blue;
 			}
-			
+
 			@media screen and (orientation: portrait) {
 				margin-top: 8em;
 			}
 		}
 	}
-	
-	
-	
+
+
+
 	h4 {
 		margin-top: 170px;
 	}
-	
+
 	ul {
 		list-style-type: none;
 		margin: 0;
 		font-family: $sans-serif;
 		font-weight: 400;
 		font-size: .9em;
-		
+
 		li {
 			padding: 0;
 			margin: 8px 0;
 			line-height: 16px;
-			
+
 			i {
 				vertical-align: middle;
 				margin-top: -3px;
 			}
 		}
 	}
-	
+
 	footer {
 		position: absolute;
 		left: 50%;
 		margin-left: -31.25rem;
 		bottom: 0;
-		
+
 		p {
 			color: $white;
 			font-size: .7em;
-			
+
 			a {
 				color: $pink;
 			}
 		}
-		
+
 		@media screen and (max-width: 1024px) {
 			left: 0;
 			margin-left: 0;
