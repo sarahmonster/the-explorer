@@ -320,9 +320,37 @@ a:hover i:after {
 	background-size: cover;
 	background-attachment: fixed;
 
+	.header {
+		text-align: center;
+
+		h1 {
+			color: $blue;
+		}
+	}
+
 	.project-overview {
 		margin-top: 20em;
 		padding-top: 1em;
+	}
+
+	.thumbnails img {
+		@include circular;
+	}
+
+	&.wickeremporium {
+		background-image: url('../images/work/wicker-emporium/bg.jpg') !important;
+	}
+	&.eltettensor {
+		background-image: url('../images/work/el-tettensor-author-website/bg.jpg');
+	}
+	&.cascades {
+		background-image: url('../images/work/cascades-day-spa-website/bg2.jpg');
+	}
+	&.zombies {
+		background-image: url('../images/work/zombies-ate-lauren/bg.jpg');
+	}
+	&.triggersandsparks {
+		background-image: url('../images/work/triggers-and-sparks/bg.jpg');
 	}
 }
 
@@ -459,83 +487,21 @@ a:hover i:after {
 		}
 }
 
-
-
-#wickeremporium {
-	background-image: url('../images/work/wicker-emporium/bg.jpg');
-}
-#eltettensor {
-	background-image: url('../images/work/el-tettensor-author-website/bg.jpg');
-}
-#cascades {
-	background-image: url('../images/work/cascades-day-spa-website/bg2.jpg');
-}
-#zombies {
-	background-image: url('../images/work/zombies-ate-lauren/bg.jpg');
-}
-#triggersandsparks {
-	background-image: url('../images/work/triggers-and-sparks/bg.jpg');
-}
-
-#other {
-	padding-top: 6em;
-	padding-bottom: 2em;
-	background-image: url('../images/backgrounds/map.jpg');
-	background-size: cover;
-
-	h1 {
-		text-align: center;
-	}
-
-	.project-overview {
-		padding: 5px;
-		border: 0;
-		width: 32%;
-		margin: 0 2% 1em 0;
-
-		&:last-child{
-			margin-right: 0;
-		}
-
-		.services {
-			margin: -10px 0 10px -15px;
-			position: relative;
-
-			@media #{$medium-only} {
-				display: none;
-			}
-		}
-
-		p {
-			font-size: .9em;
-			line-height: 1.2em;
-			margin:  .5em 3em;
-			text-align: center;
-
-			@media #{$medium-only} {
-				margin: .5em;
-			}
-		}
-	}
-}
-
-
-
 /* contact section */
 #contact {
 	padding-top: 175px;
-	background: url('../images/backgrounds/rocketship.png') no-repeat calc(50%+400px) -150px,
+	background: url('../images/backgrounds/rocketship.png') no-repeat calc(50% + 400px) -150px,
 				url('../images/backgrounds/planet-surface.png') no-repeat bottom center,
 				url('../images/backgrounds/pink-sky.jpg') repeat-y top center,
 				$pink;
 	background-size: 615px 1164px, cover, cover;
 
 	@media screen and (max-width: 1024px) {
-		background-position: calc(50%+290px) -130px, center, center;
+		background-position: calc(50% + 290px) -130px, center, center;
 	}
 
 	@media screen and (orientation: portrait) {
-		background-position: calc(50%+250px) -100px, center, center;
+		background-position: calc(50% + 250px) -100px, center, center;
 		padding-top: 210px;
 	}
 
@@ -543,6 +509,7 @@ a:hover i:after {
 		@include circular;
 		margin-top: -4em;
 	}
+
 	h3 {
 		margin-top: .5em;
 
@@ -552,7 +519,7 @@ a:hover i:after {
 
 		&:nth-of-type(2) {
 			color: $purple;
-			margin-top: 5em;
+			margin-top: 2em;
 
 			span {
 				color: $blue;

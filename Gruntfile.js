@@ -10,8 +10,7 @@ module.exports = function(grunt) {
           {expand: true, src: ['images/**'], dest: 'dist/'},
           {expand: false, src: ['humans.txt'], dest: 'dist/humans.txt'},
           {expand: false, src: ['robots.txt'], dest: 'dist/robots.txt'},
-          {expand: false, src: ['index.html'], dest: 'dist/index.html'},
-          {expand: false, src: ['wickeremporium.html'], dest: 'dist/wickeremporium.html'},
+          {expand: false, src: ['*.html'], dest: 'dist/'},
         ]
       }
     },
@@ -54,7 +53,7 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
 
       copy: {
-        files: ['fonts/**', 'images/**', 'index.html', 'humans.txt', 'robots.txt'],
+        files: ['fonts/**', 'images/**', '*.html', 'humans.txt', 'robots.txt'],
         tasks: ['copy']
       },
 
