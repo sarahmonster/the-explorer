@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           {expand: false, src: ['humans.txt'], dest: 'dist/humans.txt'},
           {expand: false, src: ['robots.txt'], dest: 'dist/robots.txt'},
           {expand: false, src: ['index.html'], dest: 'dist/index.html'},
+          {expand: false, src: ['wickeremporium.html'], dest: 'dist/wickeremporium.html'},
         ]
       }
     },
