@@ -114,14 +114,12 @@ a:hover i:after {
 	&:before, &:after {
 		content: '\00B7';
 		display: inline-block;
-	}
-	span {
 		padding: 0 15px;
 	}
 
 	&:hover, &:focus {
 		color: $white;
-	  	border: 1px solid $blue;
+	  border: 1px solid $blue;
 		@include css-gradient(lighten($blue, 10%), lighten($blue, 5%));
 		text-shadow: -1px -1px 1px darken($blue, 20%);
 	}
