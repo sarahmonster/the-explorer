@@ -100,7 +100,7 @@ a:hover i:after {
 	cursor: pointer;
 	@include css-gradient(darken($white, 0%), darken($white, 5%));
 	border: 1px solid #fff;
-	padding: 10px 25px;
+	padding: 13px 25px;
 	margin: 0 auto 20px;
 	line-height: 1em;
 	@include box-shadow (1px, 1px, 3px, rgba(0, 0, 0, .5));
@@ -111,6 +111,10 @@ a:hover i:after {
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 1px #fff;
 
+	&:before, &:after {
+		content: '\00B7';
+		display: inline-block;
+	}
 	span {
 		padding: 0 15px;
 	}
