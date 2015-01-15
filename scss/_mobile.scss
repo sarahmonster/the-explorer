@@ -1,24 +1,21 @@
 a.menu-icon {
 	width: auto;
-	background: transparent; 
+	background: transparent;
 	z-index: 4000;
-	
+
 	span {
 		left: auto;
 		right: 0.8125rem;
 	}
 }
 
-.column {
-	padding: 0;
-}
 p {
 	font-size: .9rem;
 }
 .panel {
 	min-height: 0;
 	padding-top: 0;
-	
+
 
 }
 
@@ -27,29 +24,29 @@ p {
 #hello {
 	background: url('../images/backgrounds/stars.png') no-repeat top center, darken($purple, 40%);
 	background-size: 1600px 1260px;
-	
+
 	img.sarahface {
 		float: none;
 		display: block !important;
 		width: 70%;
 		margin: 10% 15% -5%;
-		
+
 		@media #{$landscape} {
 			float: left;
-			width: 35%;	
+			width: 35%;
 			margin: 40px 20px 10px;
 		}
 	}
-	
+
 	h1 {
 		font-size: 1.8em;
 		text-align: center;
 	}
-	
+
 	.intro {
-		font-size: 1.2em;	
+		font-size: 1.2em;
 		text-align: center;
-	}		
+	}
 }
 
 #about {
@@ -57,33 +54,37 @@ p {
 	img {
 		display: none;
 	}
-	
+
 }
 
-
-
-#work, .project, .project-details { display: none; }
-
+/* portfolio section */
+#work {
+	.thumbnails img {
+		border-width: 8px;
+		width: 80%;
+		margin: 10%;
+	}
+}
 
 /* contact section */
 #contact {
 	padding-top: 70px;
 	background: $pink url('../images/backgrounds/pink-sky.jpg') repeat-y center -45px;
 	background-size: 950px 616px;
-	
+
 	img {
 		display: none;
 	}
-	
+
 	h3:nth-of-type(2) {
 		margin-top: 2em;
 		margin-bottom: 1em;
 	}
-	
+
 	h4 {
 		display: none;
 	}
-	
+
 	footer {
 		display: none;
 	}
