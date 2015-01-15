@@ -126,7 +126,7 @@ a:hover i:after {
 
 	&:active {
 		color: $white;
-	  	border: 1px solid darken($blue, 5%);
+	  border: 1px solid darken($blue, 5%);
 		text-shadow: -1px -1px 1px darken($blue, 20%);
 		@include css-gradient(lighten($blue, 5%), lighten($blue, 10%));
 		@include box-shadow (-1px, -1px, 3px, rgba(0, 0, 0, .25));
@@ -174,6 +174,10 @@ a:hover i:after {
 				background: darken($blue, 10%);
 				border-radius: 0;
 				color: darken($white, 20%);
+
+				&.clickable {
+					cursor: pointer;
+				}
 
 				i {
 					background: lighten($blue, 5%);
